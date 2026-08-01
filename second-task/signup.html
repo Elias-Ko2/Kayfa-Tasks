@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    
+    <form>
+    <label for="Full-Name">Full Name :</label><br>
+    <input type="text" id="Full-Name" name="Full-Name" required minlength="10" maxlength="20"><br>
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Password :</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="website">Website :</label><br>
+    <input type="url" id="website" name="website"><br>
+    <label for="Phone">Phone :</label><br>
+    <input type="tel" id="Phone" name="Phone"><br>
+    <label for="age">Age :</label><br>
+    <input type="number" id="age" name="age"><br>
+    <label for="birthdate">Birthdate :</label><br>
+    <input type="date" id="birthdate" name="birthdate"><br>
+    <label for="file">Pick a file :</label><br>
+    <input type="file" id="file" name="file" multiple><br>
+    <input type="hidden" value="?">
+    <label for="digital-code">Digital code :</label><br>
+    <input type="text" id="digital-code" name="digital-code" pattern="[A-Za-z]{5}" title="Please enter 5 digit"><br>
+    <input type="button" value="not submit"><br>
+    <label>Gender :</label><br>
+    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female"><label for="female">female</label><br>
+    <label>Hobbies</label><br>
+    <input type="checkbox" id="Coding" name="hobbies"><label for="Coding">Coding</lable><br>
+    <input type="checkbox" id="Gaming" name="hobbies"><label for="Gaming">Gaming</lable><br>
+    <input type="checkbox" id="Reading" name="hobbies"><label for="Coding">Reading</lable><br>
+    <label for="country">select your country</label><br>
+    <select id="country" name="country">
+        <optgroup label="country">
+             <option value="sy">Syria</option>
+             <option value="eg">Egypt</option>
+        </optgroup>
+    </select><br>
+    <label for="notes">Notes :</label><br>
+    <textarea id="notes" name="notes" rows="5" cols="20"></textarea>
+
+
+    </form>
+
+</body>
+</html>
