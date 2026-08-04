@@ -1,0 +1,180 @@
+@font-face 
+{
+    font-family: h-font;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: p-font;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+div 
+{
+    background-color:white;
+    padding: 1% 4%;
+    margin: 4% 9%;
+    border-radius: 28px;
+    font-family: p-font;
+    font-size: 13px;
+    color: rgb(85, 79, 79);
+}
+
+img
+{
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+h1
+{
+    margin: 0px;
+    color: rgb(54, 46, 46);
+    font-family: h-font;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+p
+{
+    margin-bottom: 20px;
+}
+
+h2 
+{
+    color: #844732;
+    font-family: h-font;
+    font-weight: normal;
+}
+
+.Preparation 
+{
+    background-color: #fff7fc;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    font-size: 13px;
+    
+}
+.Preparation h4
+{
+    color: #8d294e;
+    margin: 0px;
+    padding: 18px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.Preparation ul 
+{
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+}
+
+.Preparation ul li::marker
+{
+    color: #8d294e;
+}
+
+
+.Preparation li
+{
+    padding-left: 14px;
+    padding-bottom: 10px;
+}
+
+.Ingredients
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Ingredients ul 
+{
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.Ingredients ul li::marker
+{
+    color: #844732;
+}
+
+.Ingredients li
+{
+    padding-left: 14px;
+    padding-bottom: 10px;
+}
+
+.Instructions
+{
+     margin: 0px;
+    padding: 0px;
+}
+
+.Instructions ol
+{
+    padding-left: 20px;
+}
+
+.Instructions ol li::marker
+{
+    color: #844732;
+    font-weight: bold;
+}
+
+.Instructions li
+{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.Nutrition
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Nutrition p 
+{
+    margin: 0px;
+}
+
+.Nutrition table
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.Nutrition td
+{
+    padding: 10px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    
+}
+
+.Nutrition tr :first-child
+{
+    font-weight: bold;
+    color: rgb(124, 120, 120);}
+
+.Nutrition tr:last-child td 
+{
+  border-bottom: none;
+}
+
+.Nutrition td:last-child
+{
+    color: #844732;
+    font-weight: bold;
+}
+
+hr 
+{
+    opacity: 50%;
+}
