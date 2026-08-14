@@ -1,0 +1,183 @@
+@font-face {
+    font-family: M-font;
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+body
+{
+    background-color: hsl(221, 100%, 96%);
+    margin: 0;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    height: 470px;
+    border-radius: 30px;
+    font-family: M-font;
+    font-weight: 700;
+}
+
+.summary
+{
+    display: flex;
+    order: 2;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 25px;
+}
+
+.summary h3
+{
+    font-size: 23px;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary div
+{
+    margin: 7px 0;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.summary div div 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.summary div img
+{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.summary div .max
+{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.summary .reaction
+{
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.summary .reaction .text
+{
+    color: hsl(0, 100%, 67%, 0.9);
+}
+
+.summary .memory
+{
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.summary .memory .text
+{
+    color: hsl(39, 100%, 56%, 0.9);
+}
+
+.summary .verbal
+{
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.summary .verbal .text
+{
+    color: hsl(166, 100%, 37%, 0.9);
+}
+
+.summary .visual
+{
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.summary .visual .text
+{
+    color: hsl(234, 85%, 45%, 0.9);
+}
+
+.summary .continue
+{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 15px;
+    margin: auto 0;
+    border-radius: 25px;
+}
+
+
+
+.result
+{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.result h3
+{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 20px;
+    margin: 15px 0;
+}
+.result div
+{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.result div h1
+{
+    font-size: 60px;
+    margin: 0;
+}
+
+.result div h4
+{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.result h2
+{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.result p
+{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
