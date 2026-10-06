@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the secret number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div id="game">
+        <div id="main_div">
+            <p id="number_type">static number</p>
+            <h1>guess the secret number</h1>
+            <input type="number" id="guessed" class="guess_area" name="guessed" placeholder="your guessing number">
+            <p id="message"> </p>
+            <p class="atmpt">attempts : <span id="attempts"></span></p>
+            <div class="btn">
+                <button id="check_btn" class="btn-s">Check</button>
+                <button id="reset_btn" class="btn-s">Reset</button>
+            </div>
+        </div>
+        <div id="help_div">
+            <h1>help</h1>
+            <p>there is a hidden number</p>
+            <p>you have to guess a number </p>
+            <p>and put it inside the box</p>
+            <p>you have 5 attempts to try</p>
+            <button id="close" class="btn-s">close</button>
+        </div>
+    </div>
+    
+
+
+    <div id="btn-d">
+        <button id="random" class="btn-s">wanna random?</button>
+        <button id="help" class="btn-s">help me</button>
+    </div>
+    
+</main>
+<script src="app.js"></script>
+</body>
+</html>
