@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="cust-name"><br>
+        <label for="Phone">Phone</label>
+        <input type="tel" id="Phone" name="cust-phone" placeholder="01xxxxxxxxx"><br>
+        <div>
+            <select name="menu" id="menu">
+                <option value="Menu">Menu</option>
+                <option value="Espresso">Espresso</option>
+                <option value="Latte">Latte</option>
+                <option value="Croissant">Croissant</option>
+            </select>
+            <button type="button" id="btn_add">Add</button>
+        </div>
+        <ul id="pre_order"></ul>
+    </form>
+
+    <P id="error"></P>
+
+    <button id="btn_cal">calculate</button>
+
+    <div id="order" class="order">
+        <p id="name_D"></p>
+        <p id="phone_D"></p>
+        <ul id="item_D"></ul>
+        <P id="deliviry_F"></P>
+        <p id="Total"></p>
+        <p id="msg"></p>
+
+
+    </div>
+
+    
+
+
+
+</main>
+
+
+<script src="app.js" defer></script>
+</body>
+</html>
