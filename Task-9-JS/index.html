@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Stock Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main >
+    <h1>Shop Stock Board</h1>
+
+    <section class="buttons">
+      <div class="D_buttons">
+        <button type="button" class="btn" id="btn_all">All</button>
+        <button type="button" class="btn" id="btn_instock">In Stock</button>
+        <button type="button" class="btn" id="btn_cheap">Cheap</button>
+        <button type="button" class="btn" id="btn_expensive">Expensive</button>
+        <button type="button" class="btn" id="btn_sort">Sort</button>
+        <button type="button" class="btn" id="btn_discount">Discount 10%</button>
+        <button type="button" class="btn" id="btn_reset">Reset</button>
+      </div>
+    </section>
+
+
+    <section class="products">
+      <h2>Products</h2>
+      <ul class="P_list" id="prod_list">
+      </ul>
+
+      <div class="info">
+        <p class="number_info">
+          <span class="num_txt">Number of products shown</span>
+          <strong class="num_value" id="count">0</strong>
+        </p>
+        <p class="price_info">
+          <span class="price_txt">Total stock value</span>
+          <strong class="pricec_value" id="total">EGP</strong>
+        </p>
+        <p class="status" id="status"></p>
+      </div>
+    </section>
+
+    <section class="add_product">
+      <h2>Add Product Form</h2>
+      <form id="product_f">
+        <div>
+          <input type="text" id="name" placeholder="Product Name">
+
+          <select id="category">
+            <option value="">Choose category</option>
+            <option value="electronics">electronics</option>
+            <option value="clothes">clothes</option>
+            <option value="food">food</option>
+          </select>
+
+          <input type="number" id="price" placeholder="Price">
+
+          <input type="number" id="stock" placeholder="Stock">
+
+          <button type="submit" id="btn_add">Add Product</button>
+        </div>
+      </form>
+      <p id="error"></p>
+    </section>
+
+
+
+  </main>
+
+
+<script src="app.js" defer></script>
+</body>
+</html>
