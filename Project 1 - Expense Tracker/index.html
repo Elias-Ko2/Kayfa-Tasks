@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <nav>
+        <P class="header_P">Expense Tracker</P>
+    </nav>
+
+    <main>
+        <div class="input-group" id="monthly">
+            <span class="input-group-text">Monthly budget</span>
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" aria-label="Dollar amount" id="MB" value="0">
+        </div>
+        <section class="S_cards">
+            <div class="cards">
+                <div class="Card" id="total_C">
+                    <p>Total</p>
+                    <p id="total_spend"></p>
+                </div>
+                <div class="Card">
+                    <p>Counter</p>
+                    <p id="counter"></p>
+                </div>
+                <div class="Card">
+                    <p>Biggest</p>
+                    <p id="biggest"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="S_table">
+            <div class="table_of_expenses">
+                <div class="filter">
+                    <select class="form-control" id="category"></select>
+                    <button class="btn-outline theme-secondary input-group-btn" id="sort_amo_btn">Sort by amount</button>
+                    <button class="btn-outline theme-secondary input-group-btn" id="sort_id_btn">Sort by id</button>
+                </div>
+                <div class="TBL" id="TOE">
+                    <table class="table table-striped table-hover" id="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="info">
+                        </tbody>
+                    </table>
+                    <p id="msg" >No expenses found</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="S_form">
+            <form id="Form">
+                <div class="input-group">
+                    <span class="input-group-text">Description</span>
+                    <textarea class="form-control" aria-label="Description" id="Desc"></textarea>
+                </div>
+                <p id="txt_msg">The description must be 3 or more letters</p>
+                <div class="input-group">
+                    <span class="input-group-text">Amount</span>
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" aria-label="Dollar amount" id="Amo">
+                </div>
+                <p id="amount_msg">The amount must be a number more than 0</p>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                    <select class="form-control" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="Food">Food</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <p id="cat_msg">you should Select category</p>
+                <div>
+                    <label for="datepickerIconStart" class="form-label">Select date</label>
+                    <div class="form-control form-adorn w-12" id="date_S">
+                        <div class="form-adorn-icon">
+                            <svg class="bi" width="16" height="16"><use href="#calendar-week" /></svg>
+                        </div>
+                        <input type="text" class="form-ghost" id="datepickerIconStart" data-bs-toggle="datepicker" data-bs-placement="auto" autocomplete="off" placeholder="Choose date…">
+                    </div>
+                </div>
+                <p id="date_msg">you should Select date</p>
+                <button class="btn-outline theme-secondary input-group-btn" type="submit" id="button-addon">Button</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
